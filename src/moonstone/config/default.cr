@@ -38,5 +38,6 @@ at_exit do
     Moonstone.runner.run args
   rescue e
     Moonstone.runner.print_exception e
+    exit 1
   end
 end
